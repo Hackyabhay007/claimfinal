@@ -1,0 +1,78 @@
+@font-face {
+    font-family: 'Marlide Display';
+    src: url('MarlideDisplay_Regular.eot');
+    src: local('Marlide Display Regular'), local('MarlideDisplay_Regular'),
+        url('MarlideDisplay_Regular.eot?#iefix') format('embedded-opentype'),
+        url('MarlideDisplay_Regular.woff2') format('woff2'),
+        url('MarlideDisplay_Regular.woff') format('woff'),
+        url('MarlideDisplay_Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Marlide Display';
+    src: url('MarlideDisplay_ExtraBold.eot');
+    src: local('Marlide Display ExtraBold'), local('MarlideDisplay_ExtraBold'),
+        url('MarlideDisplay_ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('MarlideDisplay_ExtraBold.woff2') format('woff2'),
+        url('MarlideDisplay_ExtraBold.woff') format('woff'),
+        url('MarlideDisplay_ExtraBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Marlide Display';
+    src: url('MarlideDisplay_Medium.eot');
+    src: local('Marlide Display Medium'), local('MarlideDisplay_Medium'),
+        url('MarlideDisplay_Medium.eot?#iefix') format('embedded-opentype'),
+        url('MarlideDisplay_Medium.woff2') format('woff2'),
+        url('MarlideDisplay_Medium.woff') format('woff'),
+        url('MarlideDisplay_Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Marlide Display';
+    src: url('MarlideDisplay_Heavy.eot');
+    src: local('Marlide Display Heavy'), local('MarlideDisplay_Heavy'),
+        url('MarlideDisplay_Heavy.eot?#iefix') format('embedded-opentype'),
+        url('MarlideDisplay_Heavy.woff2') format('woff2'),
+        url('MarlideDisplay_Heavy.woff') format('woff'),
+        url('MarlideDisplay_Heavy.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Marlide Display';
+    src: url('MarlideDisplay_Bold.eot');
+    src: local('Marlide Display Bold'), local('MarlideDisplay_Bold'),
+        url('MarlideDisplay_Bold.eot?#iefix') format('embedded-opentype'),
+        url('MarlideDisplay_Bold.woff2') format('woff2'),
+        url('MarlideDisplay_Bold.woff') format('woff'),
+        url('MarlideDisplay_Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Marlide Display';
+    src: url('MarlideDisplay_Light.eot');
+    src: local('Marlide Display Light'), local('MarlideDisplay_Light'),
+        url('MarlideDisplay_Light.eot?#iefix') format('embedded-opentype'),
+        url('MarlideDisplay_Light.woff2') format('woff2'),
+        url('MarlideDisplay_Light.woff') format('woff'),
+        url('MarlideDisplay_Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
