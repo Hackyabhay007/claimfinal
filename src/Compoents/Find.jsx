@@ -2,23 +2,44 @@ import React, { useState, useEffect } from "react";
 import { IoSearch } from "react-icons/io5";
 import logo from "../Assests/1st Image.svg";
 import sasd from "../../src/index.css";
-import { Link } from "react-router-dom";
+import { useNavigate } from 'react-router-dom';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function Find() {
   const [walletAddress, setWalletAddress] = useState("");
+  const navigate = useNavigate();
+
   function dollar() {
     const minAmount = 1000;
     const maxAmount = 10000;
     return Math.floor(Math.random() * (maxAmount - minAmount + 1)) + minAmount;
   }
+
   useEffect(() => {
-    // Save the wallet address to local storage
     localStorage.setItem("walletAddress", walletAddress);
     localStorage.setItem("dollar", dollar());
   }, [walletAddress]);
 
   const handleInputChange = (e) => {
     setWalletAddress(e.target.value);
+  };
+
+  const handleSubmit = () => {
+    if (walletAddress.trim() === "") {
+      toast.error("Please enter a wallet address or ENS.", {
+        position: "bottom-left",
+        autoClose: 3000,
+        hideProgressBar: true,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "colored",
+      });
+    } else {
+      navigate('/claimables');
+    }
   };
 
   return (
@@ -51,15 +72,14 @@ function Find() {
                   onChange={handleInputChange}
                 />
               </div>
-              <Link to="/claimables">
-                <button className=" bg-[#fa9706] px-7 py-2 rounded-full">
-                  Go
-                </button>
-              </Link>
+              <button className=" bg-[#fa9706] px-7 py-2 rounded-full" onClick={handleSubmit}>
+                Go
+              </button>
             </div>
           </div>
         </div>
       </div>
+      <ToastContainer />
     </div>
   );
 }
