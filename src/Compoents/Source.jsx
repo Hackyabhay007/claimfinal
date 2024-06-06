@@ -2,7 +2,7 @@ import sourceImg from "../Assests/4th Image.png";
 import React, { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { useInView } from 'react-intersection-observer';
-import '../App.css'; // Ensure you have appropriate CSS
+
 import Bottom from "./Bottom";
 
 function Source() {
@@ -12,6 +12,20 @@ function Source() {
     backgroundRepeat: "no-repeat",
     backgroundPosition: "center right",
   };
+  
+  // Media query to handle scaling on smaller screens
+  const style = document.createElement('style');
+  style.innerHTML = `
+    @media (max-width: 768px) {
+      .responsive-background {
+        background-size: cover; /* Ensures the image covers the background area */
+        background-position: center; /* Centers the image */
+      }
+    }
+  `;
+  
+  document.head.appendChild(style);
+  
 
   const { ref, inView } = useInView({
     triggerOnce: true, // Trigger animation only once
@@ -41,13 +55,13 @@ function Source() {
 
   
   return (
-    <footer class="bg-[#161616]">
+    <footer class="">
       <div
       ref={ref}
         style={bgImage1}
-        class=" Middle  h-[700px] p-4 flex items-center justify-center lg:justify-between  shadow-xl bg-[#0f0f0f] rounded-3xl   "
+        class=" Middle h-[400px]  md:rounded-none shadow-xl xl:h-[700px] p-4 flex items-center justify-center lg:justify-between  bg-[#0f0f0f]    "
       >
-        <div  ref={animateRef} className=" h-fit w-fit text-[40px] sm:text-[50px] lg:text-[77px]   rounded-2xl bg-black/50 p-6 xl:p-0 xl:bg-[#161616]  lg:ml-24 text-white  tracking-wide  leading-none">
+        <div  ref={animateRef} className=" h-fit w-fit text-[40px] sm:text-[50px] lg:text-[77px]   rounded-2xl bg-black/50 p-6 xl:p-0 xl:bg-[#0f0f0f] lg:ml-24 text-white  tracking-wide  leading-none">
           <div className="text-left">
             <p className=" font-normal font-[Anton] ">WE SOURCE FROM</p>
             <p>

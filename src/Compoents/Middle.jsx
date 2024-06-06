@@ -3,12 +3,15 @@ import middleSec from "../Assests/2nd Image.png";
 import React, { useRef, useEffect, useState } from "react";
 import gsap from "gsap";
 import { useInView } from "react-intersection-observer";
+import '../App.css'; 
 
 function Middle() {
   const bgImage = {
     background: `url('${middleBg}')`,
     backgroundSize: "cover",
-    backgroundRepeat: "no-repeat",
+    backgroundPosition:"center ",
+  
+    
   };
   const boxRefs = useRef([]);
   const [animationTriggered, setAnimationTriggered] = React.useState(false);
@@ -47,7 +50,7 @@ function Middle() {
   return (
     <div
       style={bgImage}
-      className="  xl:h-[155vh] py-4 px-6  gap-16 lg:gap-64 flex xl:flex-col flex-wrap   items-center   "
+      className="bg-container pt-12 xl:h-[135vh] py-4 px-6  gap-16 lg:gap-64 flex xl:flex-col flex-wrap   items-center   "
     >
       <div className="bg-[#201f23] overflow-visible justify-center pt-6 xl:pt-0  border border-gray-500 hover:scale-105 hover:cursor-pointer transition delay-150 duration-300 ease-in-out xl:h-28 px-6 xl:w-[950px] lg:justify-between rounded-2xl text-white flex flex-wrap xl:items-center ">
         <div className=" xl:text-[18px]  md:text-[24px]  tracking-wider font-bold font-[Manrope] ">
@@ -68,13 +71,13 @@ function Middle() {
         className="flex lg:flex-row flex-wrap flex-col md:gap-7 items-center justify-center w-full"
       >
         <div ref={addToRefs} className="flex gap-4 md:gap-8">
-          <div className="lg:h-80 h-40 w-40 lg:w-64 flex leading-tight mt-8 lg:mt-24 flex-col items-center justify-center text-white rounded-md bg-[#000000]">
+          <div className="lg:h-80 h-36 w-36 p-2 text-center sm:h-40 sm:w-40 lg:w-64 flex leading-tight mt-8 lg:mt-24 flex-col items-center justify-center text-white rounded-md bg-[#000000]">
             <p className="font-[Manrope] text-[16px] text-[#f59b09] font-bold">
               Avg per user
             </p>
             <p className="lg:text-[78px] text-[24px] font-[Anton]">$803</p>
           </div>
-          <div className="lg:h-80 h-40 w-40 lg:w-64 flex leading-tight flex-col items-center justify-center text-white rounded-md bg-[#000000]">
+          <div className="lg:h-80 h-36 w-36 p-2 text-center sm:h-40 sm:w-40 lg:w-64 flex leading-tight flex-col items-center justify-center text-white rounded-md bg-[#000000]">
             <p className="font-[Manrope] text-[16px] text-[#f59b09] font-bold">
               Found for users
             </p>
@@ -82,13 +85,13 @@ function Middle() {
           </div>
         </div>
         <div ref={addToRefs} className="flex gap-4 md:gap-8">
-          <div className="lg:h-80 h-40 w-40 lg:w-64 flex leading-tight mt-8 lg:mt-24 flex-col items-center justify-center text-white rounded-md bg-[#000000]">
+          <div className="lg:h-80 h-36 w-36 p-2 text-center sm:h-40 sm:w-40 lg:w-64 flex leading-tight mt-8 lg:mt-24 flex-col items-center justify-center text-white rounded-md bg-[#000000]">
             <p className="font-[Manrope] text-[16px] text-[#f59b09] font-bold">
               Unclaimed Airdrops
             </p>
             <p className="lg:text-[78px] text-[24px] font-[Anton]">98,594</p>
           </div>
-          <div className="lg:h-80 h-40 w-40 lg:w-64 flex leading-tight flex-col items-center justify-center text-white rounded-md bg-[#000000]">
+          <div className="lg:h-80 h-36 w-36 p-2 text-center sm:h-40 sm:w-40 lg:w-64 flex leading-tight flex-col items-center justify-center text-white rounded-md bg-[#000000]">
             <p className="font-[Manrope] text-[16px] text-[#f59b09] font-bold">
               Users
             </p>
