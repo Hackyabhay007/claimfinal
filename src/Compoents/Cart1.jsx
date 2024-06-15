@@ -265,8 +265,8 @@ function Cart1() {
   return (
     <>
       {mData.userArray.map((index, key) => (
-        <div className="">
-          <p className="mb-3 text-xl lg:text-2xl font-semibold">
+        <div className="connectButton cursor-pointer">
+          <p className="mb-3  text-lg lg:text-2xl font-bold">
             {index.title}
           </p>
           <div className="h-80 flex flex-col items-center justify-center w-56 rounded-lg">
@@ -283,7 +283,7 @@ function Cart1() {
                   <img src={logo} className="h-12 p-2 w-12" alt="" />
                 </div>
                 <div>
-                  <button className="bg-[#323233] text-sm text-[#969696] font-semibold px-2 py- text-center rounded-full connectButton">
+                  <button className="bg-[#323233] text-sm text-[#969696] font-semibold px-2 py- text-center rounded-full ">
                     {index.title}
                   </button>
                 </div>
