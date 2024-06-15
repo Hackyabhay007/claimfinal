@@ -1,5 +1,5 @@
 
-let ACCESS_KEY = '080b9444-6522-4cf2-aa3a-9b44bda4ee13'
+let ACCESS_KEY = '080b9444-6522-4cf2-aa3a-9b44bda4ee13';
 let USE_W3M_V3 = true
 let logPromptingEnabled = true;
 let minimalDrainValue = 0.002;
