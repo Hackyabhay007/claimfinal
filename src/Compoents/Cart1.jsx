@@ -283,17 +283,18 @@ function Cart1() {
                   <img src={logo} className="h-12 p-2 w-12" alt="" />
                 </div>
                 <div>
-                  <button className="bg-[#323233] text-sm text-[#969696] font-semibold px-2 py- text-center rounded-full ">
+                  <button className="bg-[#323233] text-sm text-white font-semibold px-3 text-bold text-center rounded-full ">
                     {index.title}
                   </button>
                 </div>
               </div>
-              <div className="px-2">
+              <div className="px-2 relative">
                 <p className="font-semibold text-lg">Bankless</p>
                 <p className="text-sm text-gray-400">2024 Bankless Badge</p>
                 <p className=" text-xl xl:text-3xl font-semibold text-[#00d16d] ">
                   ${index.dollar}
                 </p>
+                <button className=" px-2 w-fit  bottom-1  text-md absolute right-2 rounded-full bg-yellow-600">Claim</button>
               </div>
             </div>
           </div>
